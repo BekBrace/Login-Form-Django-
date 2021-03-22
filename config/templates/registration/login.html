@@ -1,0 +1,39 @@
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/cerulean/bootstrap.min.css"
+    integrity="sha512-dQLT/B7byn2LjN/DN4zeBKpwGV6qbidV0XiMRWQOL7TGrV7FkZFldkGG+DGMU+CQnMTcRZlUI7GMWt1j6akNew=="
+    crossorigin="anonymous" />
+
+    <!-- Google Fonts - Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Login Page </title>
+</head>
+
+  <body  class="jumbotron">
+      <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="font-family: 'Press Start 2P', cursive;">
+        <div class="container">
+          <a href="../" class="navbar-brand" style="font-size: 14px;"><span style="font-size:21px">🕹️</span> Retro Gamers Club <span style="color: rgb(184, 217, 255);font-size: 14px;"> <strong> Login Page</strong>
+            </span> </a>
+          <a href="#" style="font-size: 13px;">Subscribe Now and get a 35% Discount </a>
+        </div>
+      </div>
+
+      <br /><br /> <br>
+
+      <div class="jumbotron" style="text-align: center; margin-top:-50px; font-family: 'Press Start 2P', cursive;">
+        <h1 class="display-5">Retro Gamers Club</h1>
+        <h5>Using Django Framework</h5>
+          <br />
+        <nav class="navbar navbar-expand-lg bg-secondary">
+              <form method="post" class="col-md"style="text-align: center;">
+                {% csrf_token %}
+                {{ form.as_p }}
+              <button type="submit" class="btn btn-primary">Log In</button>
+            <form>
+        </nav>
+      </div>
+  </body>
+</html>
